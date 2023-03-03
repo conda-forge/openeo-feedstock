@@ -1,11 +1,11 @@
-About openeo
-============
+About openeo-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openeo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Open-EO/openeo-python-client
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openeo-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Client Library for the openEO API. Allows you to interact with openEO backends from your own (local) Python environment.
 
