@@ -1,5 +1,5 @@
 {% set name = "openeo" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/Open-EO/openeo-python-client/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 63b244ee6537e5beb262be7fb696c76af5f87a57126f2ee51277818aae0bb498
+  sha256: f0fdb7c425e8ce0bde65bde463783f7b986c820fde5cc4532c12dd29c4e0f2fc
 #  git_url: https://github.com/Open-EO/openeo-python-client.git
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - openeo-auth = openeo.rest.auth.cli:main
 
@@ -57,7 +57,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python Client Library for the openEO API. Allows you to interact with openEO backends from your own (local) Python environment.'
+  summary: Python Client Library for the openEO API. Allows you to interact with openEO backends from your own (local) Python environment.
 
 extra:
   recipe-maintainers:
