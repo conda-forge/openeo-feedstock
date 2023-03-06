@@ -46,6 +46,7 @@ test:
     - geopandas
     - oschmod  # [win]
     - httpretty
+    - time-machine
   source_files:
     - tests
   commands:
