@@ -1,5 +1,5 @@
 {% set name = "openeo" %}
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Open-EO/openeo-python-client/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2ba2cd537f012c36f7a8e182f75a7f6fbb84b3f71f7cd1083bbb06ff85a90185
+  sha256: fab0e6d2e754742bb736fb788e7cb1db78b6f1dc2972105139de61d26a8d78e8
 #  git_url: https://github.com/Open-EO/openeo-python-client.git
 
 build:
