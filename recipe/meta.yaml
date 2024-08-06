@@ -48,7 +48,7 @@ test:
     - oschmod  # [win]
     - httpretty
     - time-machine
-    - dirty_equals
+    - dirty-equals
     - pyarrow
   source_files:
     - tests
