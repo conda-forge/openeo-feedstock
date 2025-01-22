@@ -50,6 +50,7 @@ test:
     - time-machine
     - dirty-equals
     - pyarrow
+    - pystac-client >=0.7.5
   source_files:
     - tests
   commands:
