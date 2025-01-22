@@ -52,6 +52,7 @@ test:
     - pyarrow
     - pystac-client >=0.7.5
     - python {{ python_min }}
+    - urllib3 <2.3.0
   source_files:
     - tests
   commands:
