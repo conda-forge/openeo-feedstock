@@ -51,6 +51,7 @@ test:
     - dirty-equals
     - pyarrow
     - pystac-client >=0.7.5
+    - jsonschema  # This is actually a transitive dependency of pystac-client, but conda doesn't seem to pick that up
     - python {{ python_min }}
     - urllib3 <2.3.0
   source_files:
