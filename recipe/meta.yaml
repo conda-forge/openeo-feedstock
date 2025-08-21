@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - deprecated >=1.2.12
     - numpy >=1.17.0
     - pandas >0.20.0
