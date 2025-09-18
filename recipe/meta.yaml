@@ -54,6 +54,7 @@ test:
     - jsonschema  # This is actually a transitive dependency of pystac-client, but conda doesn't seem to pick that up
     - python {{ python_min }}
     - urllib3 <2.3.0
+    - moto >=5.0.0
   source_files:
     - tests
   commands:
