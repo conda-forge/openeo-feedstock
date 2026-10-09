@@ -1,5 +1,5 @@
 {% set name = "openeo" %}
-{% set version = "0.51.0" %}
+{% set version = "0.53.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Open-EO/openeo-python-client/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: da05341ba1cb2ca2a90d989aa6899b4e71ba0f6d75780142d380245702dc36e9
+  sha256: fcbfb39c1b2455281b734f6a9d08d17b0121a075c6d2021612cc216e71289912
 #  git_url: https://github.com/Open-EO/openeo-python-client.git
 
 build:
@@ -26,7 +26,7 @@ requirements:
     - python >={{ python_min }}
     - deprecated >=1.2.12
     - numpy >=1.17.0
-    - pandas >0.20.0
+    - pandas >0.20.0,<3.0.0  # https://github.com/Open-EO/openeo-python-client/blob/v0.53.0/pyproject.toml#L30
     - requests >=2.26.0
     - shapely >=1.6.4
     - xarray >=0.12.3,<2025.01.2
